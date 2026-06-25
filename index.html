@@ -1,0 +1,384 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Braj Darshan Tourism</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,0.85);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+z-index:1000;
+}
+
+nav h2{
+color:#fff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+height:100vh;
+background:url("https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1920&auto=format&fit=crop");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.overlay{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:15px;
+color:white;
+max-width:700px;
+}
+
+.overlay h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.overlay p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#ff7b00;
+padding:15px 30px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+display:inline-block;
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:38px;
+color:#ff7b00;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
+}
+
+.card-content{
+padding:20px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.service,.package{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service:hover,.package:hover{
+transform:translateY(-8px);
+}
+
+.contact{
+background:white;
+padding:30px;
+border-radius:15px;
+max-width:700px;
+margin:auto;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact input,
+.contact select{
+width:100%;
+padding:15px;
+margin:10px 0;
+}
+
+.contact button{
+width:100%;
+padding:15px;
+background:#ff7b00;
+color:white;
+border:none;
+font-size:18px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.callbtn{
+position:fixed;
+right:20px;
+bottom:80px;
+background:#ff7b00;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+.overlay h1{
+font-size:35px;
+}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<h2>Braj Darshan Tourism</h2>
+
+<ul>
+<li><a href="#places">Places</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+
+<section class="hero">
+<div class="overlay">
+<h1>Braj Darshan Tourism</h1>
+<p>Mathura • Vrindavan • Gokul • Barsana • Govardhan</p>
+<p>श्री कृष्ण की पावन भूमि की यात्रा हमारे साथ करें</p>
+<a href="#contact" class="btn">Book Now</a>
+</div>
+</section>
+
+<section id="places">
+<h2 class="section-title">Popular Destinations</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.AJjag4jWk6JaSDAV5RIWEgHaES?w=282&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+<div class="card-content">
+<h3>Mathura</h3>
+<p>Birthplace of Lord Krishna.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.R8KNWWI4NAsuSWU_sNnXrAHaE8?w=253&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+<div class="card-content">
+<h3>Vrindavan</h3>
+<p>Prem Mandir & Banke Bihari Temple.</p>
+</div>
+</div>
+
+
+
+<div class="card">
+<img src=https://th.bing.com/th/id/OIP.hbCnz7uWqWAdWCHcUi_wmwHaEK?w=324&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+<div class="card-content">
+<h3>Barsana</h3>
+<p>Home of Radha Rani.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.moFGjio3Z90R0DYB5OeaLwHaE0?w=272&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+<div class="card-content">
+<h3>Govardhan</h3>
+<p>Govardhan Parikrama.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
+<div class="service">🚕 Taxi Service</div>
+<div class="service">🏨 Hotel Booking</div>
+<div class="service">🧑‍🏫 Tour Guide</div>
+<div class="service">🍽 Food Service</div>
+<div class="service">🎒 Full Tour Package</div>
+</div>
+</section>
+
+<section id="packages">
+<h2 class="section-title">Tour Packages</h2>
+
+<div class="services">
+
+<div class="package">
+<h3>1 Day Package</h3>
+<p>Mathura + Vrindavan</p>
+<b>Call For Price</b>
+</div>
+
+<div class="package">
+<h3>2 Day Package</h3>
+<p>Mathura + Vrindavan + Gokul</p>
+<b>Call For Price</b>
+</div>
+
+<div class="package">
+<h3>3 Day Package</h3>
+<p>Mathura + Vrindavan + Gokul + Barsana + Govardhan</p>
+<b>Call For Price</b>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Booking Request</h2>
+
+<div class="contact">
+<input type="text" id="name" placeholder="Your Name">
+<input type="tel" id="mobile" placeholder="Mobile Number">
+<input type="date" id="date">
+
+<select id="service">
+<option>Taxi Service</option>
+<option>Hotel Booking</option>
+<option>Tour Guide</option>
+<option>Food Service</option>
+<option>Full Package</option>
+</select>
+
+<button onclick="bookNow()">Send Booking Request</button>
+</div>
+</section>
+
+<footer>
+<h2>Braj Darshan Tourism</h2>
+
+<p>
+📞 <a href="tel:+919105995527" style="color:white;text-decoration:none;">
+9105995527
+</a>
+</p>
+
+<p>Mathura • Vrindavan • Gokul • Barsana • Govardhan</p>
+</footer>
+
+<a class="callbtn" href="tel:+919105995527">📞 Call Now</a>
+
+<a class="whatsapp" href="https://wa.me/919105995527">
+WhatsApp
+</a>
+
+<script>
+function bookNow(){
+
+let name=document.getElementById("name").value;
+let mobile=document.getElementById("mobile").value;
+let date=document.getElementById("date").value;
+let service=document.getElementById("service").value;
+
+let msg=
+"New Booking Request%0A%0A"+
+"Name: "+name+"%0A"+
+"Mobile: "+mobile+"%0A"+
+"Date: "+date+"%0A"+
+"Service: "+service;
+
+window.open(
+"https://wa.me/919105995527?text="+msg,
+"_blank"
+);
+}
+</script>
+
+</body>
+</html>
+```

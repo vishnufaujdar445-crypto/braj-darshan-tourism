@@ -8,7 +8,7 @@ A simple tourism website for Braj region built using a single HTML file.
 * Taxi service information
 * Hotel booking service
 * Tour guide service
-* Tour packages
+* Tour packages list
 * WhatsApp booking integration
 * Call Now button
 * Responsive design for mobile and desktop

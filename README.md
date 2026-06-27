@@ -4,7 +4,7 @@ A simple tourism website for Braj region built using a single HTML file.
 
 ## Features
 
-* Popular destinations: Mathura, Vrindavan, Barsana, and Govardhan
+* Popular destinations: Mathura, Vrindavan, Barsana, Govardhan and Gokul
 * Taxi service information
 * Hotel booking service
 * Tour guide service

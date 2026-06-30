@@ -32,4 +32,4 @@ Braj-Darshan-Tourism/
 
 Phone: +91 9105995527
 
-Developed by Vishnu Kumar.
+Developed by Vishnu Kumar ji.
